@@ -1,0 +1,12 @@
+data/MobileDeviceAccess.m.i
+data/MobileDeviceAccess.h.i
+data/ideviceinstaller.c.i
+data/MobileDeviceAccessIPhone.h.i
+data/MobileDeviceAccess.xcodeproj/project.pbxproj.i
+data/License.txt.i
+data/.hgignore.i
+data/MobileDeviceAccessIPhone.m.i
+data/Doxyfile.i
+data/MobileDeviceAccess_Prefix.pch.i
+data/MobileDevice.h.i
+data/PriorToChangingAMApplication.zip.i

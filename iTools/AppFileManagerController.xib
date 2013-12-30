@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AppFileManagerController">
+            <connections>
+                <outlet property="_browser" destination="636-K2-3St" id="WtA-Dr-Bph"/>
+                <outlet property="window" destination="1" id="g8V-UN-FEa"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="730" height="438"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="730" height="438"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" allowsMultipleSelection="YES" allowsEmptySelection="YES" defaultColumnWidth="100" minColumnWidth="100" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" translatesAutoresizingMaskIntoConstraints="NO" id="636-K2-3St">
+                        <rect key="frame" x="0.0" y="46" width="730" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="39w-LQ-fx3"/>
+                            <outlet property="menu" destination="D2g-3g-b3M" id="c3N-NU-kxi"/>
+                        </connections>
+                    </browser>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znh-EU-Ihm">
+                        <rect key="frame" x="634" y="6" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ncm-Q6-chK">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeAction:" target="-2" id="rDo-aG-kJp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="636-K2-3St" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Aop-QX-aZF"/>
+                    <constraint firstAttribute="bottom" secondItem="636-K2-3St" secondAttribute="bottom" constant="46" id="DuN-3p-EPY"/>
+                    <constraint firstAttribute="trailing" secondItem="636-K2-3St" secondAttribute="trailing" id="hoR-hz-w32"/>
+                    <constraint firstItem="636-K2-3St" firstAttribute="top" secondItem="2" secondAttribute="top" constant="-2" id="s7M-sy-h3s"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="8Fo-r2-VdH"/>
+            </connections>
+        </window>
+        <menu id="D2g-3g-b3M">
+            <items>
+                <menuItem title="Item 1" id="vS0-f1-n09">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Item 2" id="rhA-4f-ahn">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Item 3" id="O8B-j8-Mvo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="Sx8-0M-rV8"/>
+            </connections>
+        </menu>
+    </objects>
+</document>
